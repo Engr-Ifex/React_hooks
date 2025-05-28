@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Hamburger from './Components/hamburger'
 function App() {
   const [counter, setCounter] = useState(0)
   const [name, setName] = useState('')
@@ -40,6 +41,11 @@ function App() {
               <button onClick={updateName}>click me</button>
               <h1>{name}</h1>
             
+          </div>
+          
+
+          <div>
+            <Hamburger/>
           </div>
       </div>
     </>
