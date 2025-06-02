@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Hamburger from './Components/hamburger'
+import ColorPicker from './Components/ColorPicker'
 function App() {
   const [counter, setCounter] = useState(0)
   const [name, setName] = useState('')
@@ -26,6 +27,9 @@ function App() {
   return (
     <>
       <div>
+              <div>
+                <ColorPicker/>
+              </div>
           <button onClick={increase}>+</button>
           <p>{counter}</p>
           <button onClick={decrease}>-</button>
@@ -47,6 +51,7 @@ function App() {
           <div>
             <Hamburger/>
           </div>
+
       </div>
     </>
   )
